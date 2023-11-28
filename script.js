@@ -17,6 +17,7 @@ let texts = {
         revealScroll: 'Mostrar al Desplazar',
         typedTexts: ['QA Automatización', 'Desarrollador Frontend', 'Probador Manual']
     }
+    
 };
 
 menuIcon.onclick = () => {
