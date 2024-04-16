@@ -7,14 +7,14 @@ let texts = {
         toggleIcon: 'Toggle Icon',
         scrollSections: 'Scroll Sections',
         stickyNavbar: 'Sticky Navbar',
-        revealScroll: 'Scroll Reveal',
+        scrollReveal: 'Scroll Reveal',
         typedTexts: ['QA Automation', 'Frontend Developer', 'Manual Tester']
     },
     'es': {
         toggleIcon: 'Alternar Icono',
         scrollSections: 'Desplazar Secciones',
         stickyNavbar: 'Navbar Fija',
-        revealScroll: 'Mostrar al Desplazar',
+        scrollReveal: 'Mostrar al Desplazar',
         typedTexts: ['QA Automatización', 'Desarrollador Frontend', 'Probador Manual']
     }
     
