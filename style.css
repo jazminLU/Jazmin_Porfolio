@@ -391,30 +391,23 @@
 .services h2 {
     margin-bottom: 5rem;
 }
+
+.services-container .services-box {
+    flex: 1 1 150px;
+    background: var(--second-bg-color);
+    padding: 0 1rem; 
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    box-shadow: 0 0 0.5rem var(--main-color);
+    margin: 0 2%; /* Espacio entre los recuadros en pantallas grandes */
+    flex: 1 1 200px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
 .services-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-.services-container .services-box {
-     flex: 1 ;
-     background: var(--second-bg-color);
-     padding: 3rem 2rem 4rem;
-     border-radius: 2rem;
-     text-align: center;
-     border: .2rem solid var(--bg-color);
-     transition: .5s ease;
-     box-shadow: 0 0 1rem var(--main-color);
-     margin: 0 1%;
-     min-width: 300px; /* Añadir un ancho mínimo opcional */
-     max-width: 33%; /* Opcional, para evitar que crezca demasiado */
-}
-
-.services-container .services-box:hover {
-  border-color: var(--main-color);
-  transform: scale(1.02);
+    flex-wrap: wrap; /* Asegúrate de que los elementos se envuelvan si no caben en una sola línea */
+    gap: 1rem; /* Añade espacio entre los recuadros */
 }
 
 .services-box i {
@@ -711,18 +704,20 @@
         margin-top: 0;
     }
 
+  
+}
+
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
     .services-container .services-box {
-        flex: 1 1 45%; /* Reducir el tamaño de las cajas en pantallas más pequeñas */
-        margin: 0 2.5%; /* Reducir el margen entre las cajas en pantallas más pequeñas */
+        flex-basis: 100%;
+        margin-bottom: 2rem;
     }
 }
 
-@media (max-width: 480px) {
-    .services-container .services-box {
-        flex: 1 1 90%; /* Reducir aún más el tamaño de las cajas en pantallas muy pequeñas */
-        margin: 0 5%; /* Reducir aún más el margen entre las cajas en pantallas muy pequeñas */
-    }
-}
 
 
 .skill {
