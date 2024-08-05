@@ -89,6 +89,8 @@ html {
   .navbar.active {
     display: block;
     background: rgba(31, 36, 45, 0.8);
+    opacity: 1; /* Mostrar cuando activo */
+    transform: translateY(0); /* Resetear la posición */
   }
 
   
