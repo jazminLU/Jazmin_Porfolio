@@ -115,9 +115,4 @@ window.onscroll = function(){
     });
 
 
-    //Forzar el Desplazamiento al "Home" al Cargar la Página
-    window.onload = function() {
-        if (window.location.hash !== '#home') {
-          window.location.hash = '#home';
-        }
-      }
+ 
