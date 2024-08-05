@@ -57,6 +57,7 @@
     width: 100%;
     padding: 2rem 9%;
     background: var(--bg-color);
+    opacity: 0.8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -395,15 +396,21 @@
 .services-container .services-box {
     flex: 1 1 150px;
     background: var(--second-bg-color);
+    opacity: 0.8;
     padding: 0 1rem; 
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
-    box-shadow: 0 0 0.5rem var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
     margin: 0 2%; /* Espacio entre los recuadros en pantallas grandes */
     flex: 1 1 200px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+.services-container .services-box:hover {
+    border-color: var(--main-color); /* Cambia el color del borde */
+    box-shadow: 0 0 2rem var(--main-color); /* Aumenta el efecto de iluminación */
+}
+
 .services-container {
     display: flex;
     flex-wrap: wrap; /* Asegúrate de que los elementos se envuelvan si no caben en una sola línea */
@@ -534,6 +541,7 @@
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
+    opacity: 0.8;
     box-shadow: 0 0 1rem var(--main-color);
 }
 .footer.text p {
