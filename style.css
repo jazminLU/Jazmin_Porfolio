@@ -19,7 +19,10 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: auto;
 }
-
+html {
+    scroll-behavior: auto;
+  }
+  
 #particles-js {
 	height: 100vh; 
 	width: 100%;
