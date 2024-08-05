@@ -17,6 +17,7 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: auto;
 }
 
 #particles-js {
