@@ -113,5 +113,5 @@ window.onscroll = function(){
             skill.classList.add("visible");
         }, index * 300); // Adjust the delay as needed
     });
-//});
+
 
