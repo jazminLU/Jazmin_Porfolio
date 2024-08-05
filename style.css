@@ -26,6 +26,7 @@
     z-index: -1;
 }
 
+
 :root {
     --bg-color: #1f242d;
     --second-bg-color: #323946;
@@ -658,15 +659,15 @@
         margin-bottom: 3rem;
     }
 
-    .portfolio h2 {
+    .Project h2 {
         margin-bottom: 3rem;
     }
-    .portfolio-container {
+    .Project-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 617px) {
-    .portfolio-container {
+    .Project-container {
         grid-template-columns: 1fr;
     }
 }
@@ -734,4 +735,16 @@
     opacity: 1;
     transform: translateY(0);
 }
+ 
+ /* Ajustar la imagen para dispositivos móviles */
+@media (max-width: 768px) {
+    .home-img img {
+        max-width: 120%; /* Incrementa el tamaño de la imagen en móviles */
+    }
+}
 
+@media (max-width: 480px) {
+    .home-img img {
+        max-width: 140%; /* Incrementa aún más el tamaño en pantallas más pequeñas */
+    }
+}
