@@ -114,13 +114,5 @@ window.onscroll = function(){
         }, index * 300); // Adjust the delay as needed
     });
 
-//manejar el menú de hamburguesa
-    document.addEventListener('DOMContentLoaded', function () {
-        const menuIcon = document.getElementById('menu-icon');
-        const navbar = document.querySelector('.navbar');
-    
-        menuIcon.addEventListener('click', function () {
-            navbar.classList.toggle('active');
-        });
-    });
+
     
