@@ -17,10 +17,10 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: auto;
 }
+
 html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
   }
   
 #particles-js {
@@ -55,27 +55,26 @@ html {
  }
 
  .header {
-    position: fixed;
+    position: fixed; /* Fija la posición en la parte superior de la página */
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background: var(--bg-color);
-    opacity: 0.8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    border-bottom: .1rem solid rgba(0, 0, 0, .2);
-  }
+    width: 100%; /* Ancho completo de la página */
+    padding: 2rem 9%; /* Espaciado interno */
+    background: var(--bg-color); /* Usa la variable de color de fondo */
+    opacity: 0.9; /* Establece una opacidad del 90% */
+    display: flex; /* Usa Flexbox para el diseño */
+    justify-content: space-between; /* Espacia el contenido uniformemente */
+    align-items: center; /* Centra verticalmente los elementos */
+    z-index: 100; /* Asegura que el encabezado esté encima de otros elementos */
+    border-bottom: .1rem solid rgba(0, 0, 0, .2); /* Añade una línea sutil en la parte inferior */
+}
   
-
-  .logo {
+.logo {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
-  }
+}
 
 .navbar a {
     font-size: 1.7rem;
@@ -85,22 +84,20 @@ html {
   }
   
  
-
   .navbar.active {
     display: block;
-    background: rgba(31, 36, 45, 0.8);
-    opacity: 1; /* Mostrar cuando activo */
+    background: rgba(5, 5, 5, 1)rgba(5, 5, 5, 1);
+    opacity: 1; 
     transform: translateY(0); /* Resetear la posición */
   }
 
   
-
-  .navbar a:hover,
+.navbar a:hover,
   .navbar a.active {
     color: var(--main-color); 
-  } 
+} 
 
-  #menu-icon {
+#menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
@@ -108,16 +105,16 @@ html {
     background: transparent;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
   
-  .home {
+.home {
     display:flex;
     justify-content: center;
     align-items:center;
     box-shadow: 0 0 1rem var(--main-color);
-  }
+}
 
-  .home-img img{
+.home-img img{
     border-radius: 50%;
     box-shadow: 0 0 1rem var(--main-color);
     animation: animate 10s linear infinite;
@@ -136,19 +133,6 @@ html {
     margin-left: 4rem;
   }
   
-
-  @keyframes floatImage {
-    0% { 
-        transform: translateY(0);
-    }
-    50% { 
-        transform: translateY(-2.4rem);
-    }
-    100% { 
-        transform: translateY(0);
-    }
-  }
-
   .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
@@ -219,14 +203,7 @@ html {
     margin-left: 3rem;
     box-shadow: 0 0 1rem var(--main-color);
 }
-@keyframes neon {
-    from {
-        box-shadow: #0ef 0 0 0;
-    }
-    to {
-        box-shadow: #0ef 0 0 1rem;
-    }
-}
+
 .heading {
     text-align: center;
     font-size: 4.5rem;
@@ -245,6 +222,7 @@ html {
 }
 
 /* SECCION S K I L L S */
+
 .skills{
     background: none;
     color: var(--text-color);
@@ -303,97 +281,12 @@ html {
     right: -15px;
     font-size: 14px;
 }
+
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
     width: 0%;
     animation: 5s javascript forwards;
 }
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 5s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
-}
-
-.skills .skill .selenium{
-    width: 0%;
-    animation: 5s selenium forwards;
-}
-@keyframes selenium {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .appium{
-    width: 0%;
-    animation: 5s appium forwards;
-}
-@keyframes appium {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
-
-.skills .skill .sql{
-    width: 0%;
-    animation: 5s sql forwards;
-}
-@keyframes sql {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-.skills .skill .Communication{
-    width: 0%;
-    animation: 5s Communication forwards;
-}
-@keyframes Communication {
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
-
-.skills .skill .Teamwork{
-    width: 0%;
-    animation: 5s Teamwork forwards;
-}
-@keyframes Teamwork {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-
-.skills .skill .Creativity{
-    width: 0%;
-    animation: 5s Creativity forwards;
-}
-@keyframes Creativity {
-    0%{width: 0%;}
-    100%{width: 99%;}
-}
-
-.skills .skill .dedication{
-    width: 0%;
-    animation: 5s dedication forwards;
-}
-@keyframes dedication {
-    0%{width: 0%;}
-    100%{width: 85%;}
-}
-
-.skills .skill .proyect{
-    width: 0%;
-    animation: 5s proyect forwards;
-}
-@keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 94%;}
-}
-
 
 .services h2 {
     margin-bottom: 5rem;
@@ -419,7 +312,7 @@ html {
 
 .services-container {
     display: flex;
-    flex-wrap: wrap; /* Asegúrate de que los elementos se envuelvan si no caben en una sola línea */
+    flex-wrap: wrap; 
     gap: 1rem; /* Añade espacio entre los recuadros */
 }
 
@@ -573,6 +466,53 @@ html {
     color: var(--second-bg-color);
 }
 
+.skill {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.skill.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+ 
+ /* Ajustar la imagen para dispositivos móviles */
+@media (max-width: 768px) {
+    .home-img img {
+        max-width: 120%; /* Incrementa el tamaño de la imagen en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-img img {
+        max-width: 140%; /* Incrementa aún más el tamaño en pantallas más pequeñas */
+    }
+}
+
+
+@keyframes floatImage {
+    0% { 
+        transform: translateY(0);
+    }
+    50% { 
+        transform: translateY(-2.4rem);
+    }
+    100% { 
+        transform: translateY(0);
+    }
+  }
+
+  
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+    .services-container .services-box {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+}
 /*BREAKPOINTS*/
 
 @media (max-width: 1200px) {
@@ -721,39 +661,97 @@ html {
   
 }
 
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
 
-@media (max-width: 768px) {
-    .services-container {
-        flex-direction: column;
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 5s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .selenium{
+    width: 0%;
+    animation: 5s selenium forwards;
+}
+@keyframes selenium {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .appium{
+    width: 0%;
+    animation: 5s appium forwards;
+}
+@keyframes appium {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+
+.skills .skill .sql{
+    width: 0%;
+    animation: 5s sql forwards;
+}
+@keyframes sql {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.skills .skill .Communication{
+    width: 0%;
+    animation: 5s Communication forwards;
+}
+@keyframes Communication {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .Teamwork{
+    width: 0%;
+    animation: 5s Teamwork forwards;
+}
+@keyframes Teamwork {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .Creativity{
+    width: 0%;
+    animation: 5s Creativity forwards;
+}
+@keyframes Creativity {
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+
+.skills .skill .dedication{
+    width: 0%;
+    animation: 5s dedication forwards;
+}
+@keyframes dedication {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .proyect{
+    width: 0%;
+    animation: 5s proyect forwards;
+}
+@keyframes proyect {
+    0%{width: 0%;}
+    100%{width: 94%;}
+}
+
+@keyframes neon {
+    from {
+        box-shadow: #0ef 0 0 0;
     }
-    .services-container .services-box {
-        flex-basis: 100%;
-        margin-bottom: 2rem;
-    }
-}
-
-
-
-.skill {
-    opacity: 0;
-    transform: translateY(-50px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.skill.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
- 
- /* Ajustar la imagen para dispositivos móviles */
-@media (max-width: 768px) {
-    .home-img img {
-        max-width: 120%; /* Incrementa el tamaño de la imagen en móviles */
-    }
-}
-
-@media (max-width: 480px) {
-    .home-img img {
-        max-width: 140%; /* Incrementa aún más el tamaño en pantallas más pequeñas */
+    to {
+        box-shadow: #0ef 0 0 1rem;
     }
 }
