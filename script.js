@@ -111,7 +111,7 @@ window.onscroll = function(){
     skills.forEach((skill, index) => {
         setTimeout(() => {
             skill.classList.add("visible");
-        }, index * 300); // Adjust the delay as needed
+        }, index * 300); 
     });
 
 

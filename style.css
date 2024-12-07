@@ -81,7 +81,7 @@ html {
     color: var(--text-color);
     margin-left: 4rem;
     /*transition: .3s;*/
-    transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
   }
   
  
@@ -89,7 +89,7 @@ html {
     display: block;
     background: rgba(5, 5, 5, 1)rgba(5, 5, 5, 1);
     opacity: 1; 
-    transform: translateY(0); /* Resetear la posición */
+    transform: translateY(0); 
   }
 
   
@@ -576,10 +576,10 @@ html {
     
     
     .navbar.active {
-        display: flex;
+        display: block;
     }
     .navbar a {
-        display: flex;
+        display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
