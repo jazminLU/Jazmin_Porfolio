@@ -2,9 +2,9 @@
 
 .container {
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    height: 100vh; /* Establece la altura del contenedor al 100% del viewport height */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
     box-shadow: 0 0 1rem var(--main-color);
   }
   
@@ -80,7 +80,8 @@ html {
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
-    transition: .3s;
+    /*transition: .3s;*/
+    transition: all 0.3s ease-in-out;
   }
   
  
@@ -575,10 +576,10 @@ html {
     
     
     .navbar.active {
-        display: block;
+        display: flex;
     }
     .navbar a {
-        display: block;
+        display: flex;
         font-size: 2rem;
         margin: 3rem 0;
     }
