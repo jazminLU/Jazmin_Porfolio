@@ -2,7 +2,7 @@
 
 .container {
     display: flex;
-    justify-content: center; 
+    justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; 
     height: 100vh; 
     box-shadow: 0 0 1rem var(--main-color);
@@ -80,8 +80,7 @@ html {
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
-    /*transition: .3s;*/
-     transition: all 0.3s ease-in-out;
+    transition: .3s;
   }
   
  
@@ -89,7 +88,7 @@ html {
     display: block;
     background: rgba(5, 5, 5, 1)rgba(5, 5, 5, 1);
     opacity: 1; 
-    transform: translateY(0); 
+    transform: translateY(0); /* Resetear la posición */
   }
 
   
