@@ -559,7 +559,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 1000; /* Aumenta el z-index */
+        z-index: 1000; 
         box-shadow: 0 0 1rem var(--main-color);
     }
     
@@ -668,22 +668,22 @@
     100%{width: 75%;}
 }
 
-.skills .skill .htmlcss{
+.skills .skill .cypress{
     width: 0%;
-    animation: 5s htmlcss forwards;
+    animation: 5s cypress forwards;
 }
-@keyframes htmlcss {
+@keyframes cypress {
     0%{width: 0%;}
     100%{width: 89%;}
 }
 
-.skills .skill .selenium{
+.skills .skill .JMeter{
     width: 0%;
-    animation: 5s selenium forwards;
+    animation: 5s JMeter forwards;
 }
-@keyframes selenium {
+@keyframes JMeter {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .appium{
@@ -701,7 +701,7 @@
 }
 @keyframes sql {
     0%{width: 0%;}
-    100%{width: 55%;}
+    100%{width: 78%;}
 }
 
 .skills .skill .Communication{

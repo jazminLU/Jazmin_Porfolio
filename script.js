@@ -87,8 +87,8 @@ function efectoHabilidades(){
     if(distancia_skills >= 300){
         let habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("javascript");
-        habilidades[1].classList.add("htmlcss");
-        habilidades[2].classList.add("selenium");
+        habilidades[1].classList.add("cypress");
+        habilidades[2].classList.add("JMeter");
         habilidades[3].classList.add("appium");
         habilidades[4].classList.add("sql");
         habilidades[5].classList.add("Communication");
