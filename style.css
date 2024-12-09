@@ -19,9 +19,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
   
 #particles-js {
 	height: 100vh; 
@@ -40,18 +37,21 @@ html {
 
  html {
     font-size: 62.5%;
-    overflow-x: hidden;
+    
+    scroll-behavior: smooth;
  }
 
  body {
     background: var(--bg-color);
     color: var(--text-color);
     box-shadow: 0 0 1rem var(--main-color);
+    
  }
  section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
     box-shadow: 0 0 1rem var(--main-color);
+    overflow-x: hidden;
  }
 
  .header {
@@ -101,11 +101,12 @@ html {
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
-    display: flex;
+    display: none;
     box-shadow: 0 0 1rem var(--main-color);
     background: transparent;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
 }
   
 .home {
