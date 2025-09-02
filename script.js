@@ -15,14 +15,14 @@ let texts = {
         scrollSections: 'Scroll Sections',
         stickyNavbar: 'Sticky Navbar',
         scrollReveal: 'Scroll Reveal',
-        typedTexts: ['Quality Assurance', 'Quality Control', 'Manual Testing', 'Automation Testing']
+        typedTexts: ['QA Manual', 'QA Automation', 'DevOps Trainee', 'Software Student']
     },
     'es': {
         toggleIcon: 'Alternar Icono',
         scrollSections: 'Desplazar Secciones',
         stickyNavbar: 'Navbar Fija',
         scrollReveal: 'Mostrar al Desplazar',
-        typedTexts: ['Quality Assurance', 'Quality Control', 'Manual Testing', 'Automation Testing']
+        typedTexts: ['QA Manual', 'QA Automation', 'DevOps en formación', 'Estudiante de Software']
     }
     
 };
