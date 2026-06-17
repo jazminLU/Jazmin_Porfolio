@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Jazmin Luna</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+
+    <header class="header">
+        <a href="index.html" class="logo">JL</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html#home"     data-i18n="nav.home">Home</a>
+            <a href="index.html#about"    data-i18n="nav.about">About</a>
+            <a href="index.html#skills"   data-i18n="nav.skills">Skills</a>
+            <a href="index.html#services" data-i18n="nav.services">Services</a>
+            <a href="projects.html" class="active" data-i18n="nav.projects">Projects</a>
+            <a href="index.html#contact"  data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="lang-toggle">
+            <button class="lang-btn active" data-lang="en" onclick="applyLanguage('en')">EN</button>
+            <button class="lang-btn" data-lang="es" onclick="applyLanguage('es')">ES</button>
+        </div>
+    </header>
+
+    <!-- Page hero -->
+    <section class="projects-page-hero">
+
+        <div class="projects-hero-content">
+            <a href="index.html" class="projects-back-link" data-i18n="projects.page.back">← Back to home</a>
+            <h1 class="heading" data-i18n="projects.page.heading">My <span>Projects</span></h1>
+            <p data-i18n="projects.page.subtitle">DevOps infrastructure, CI/CD pipelines and web apps — built from scratch.</p>
+            <a href="#devops" class="scroll-down-arrow">
+                <i class='bx bx-chevron-down'></i>
+            </a>
+        </div>
+
+        <div class="projects-hero-terminal">
+            <div class="terminal-mock-wrapper">
+
+                <!-- floating badge top-right -->
+                <div class="terminal-badge-nodes">
+                    <small>NODES</small>
+                    <strong>48 pods running</strong>
+                </div>
+
+                <div class="terminal-mock">
+                    <div class="terminal-mock-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="terminal-mock-title">jazmin-luna — terminal</span>
+                    </div>
+                    <div class="terminal-mock-body">
+                        <div class="t-line">
+                            <span class="t-prompt">$</span>
+                            <span class="t-cmd">jazmin-luna deploy --env production</span>
+                        </div>
+                        <div class="t-line">
+                            <span class="t-check">✓</span>
+                            <span>Infrastructure provisioned (Terraform)</span>
+                        </div>
+                        <div class="t-line">
+                            <span class="t-check">✓</span>
+                            <span>Containers deployed to Kubernetes</span>
+                        </div>
+                        <div class="t-line">
+                            <span class="t-check">✓</span>
+                            <span>CI/CD pipeline executed in 2m 14s</span>
+                        </div>
+                        <div class="t-line">
+                            <span class="t-check">✓</span>
+                            <span>Health checks passed (99.98% uptime)</span>
+                        </div>
+                        <div class="t-line">
+                            <span class="t-arrow">→</span>
+                            <span>System operational</span>
+                        </div>
+                        <div class="t-line">
+                            <span class="t-prompt">$</span>
+                            <span class="t-cursor">_</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- floating badge bottom-left -->
+                <div class="terminal-badge-pipeline">
+                    <small>PIPELINE</small>
+                    <div class="pipeline-status">
+                        <span class="dot dot-green"></span>
+                        <span>All systems go</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- DevOps Projects -->
+    <section class="devops-projects" id="devops">
+        <h2 class="heading" data-i18n="devops.heading">DevOps <span>Projects</span></h2>
+        <p class="devops-subtitle" data-i18n="devops.subtitle">Infrastructure, pipelines and observability — built from scratch.</p>
+
+        <div class="devops-container">
+
+            <div class="devops-card devops-featured">
+                <div class="devops-card-top">
+                    <div class="terminal-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <span class="devops-badge-featured" data-i18n="devops.featured">★ Flagship</span>
+                </div>
+                <div class="devops-card-body">
+                    <div class="devops-card-left">
+                        <h3>infra-moon</h3>
+                        <p data-i18n="devops.infra.desc">Full cloud infrastructure for a DevTools platform on AWS. Automated deployment with Terraform + Terragrunt, Kubernetes orchestration via EKS, zero-downtime rolling updates, and a complete GitHub Actions CI/CD pipeline — from PR to production.</p>
+                        <div class="devops-stack">
+                            <span>Terraform</span>
+                            <span>Terragrunt</span>
+                            <span>AWS EKS</span>
+                            <span>GitHub Actions</span>
+                            <span>Helm</span>
+                            <span>RDS</span>
+                            <span>ECR</span>
+                            <span>Cloudflare</span>
+                        </div>
+                        <div class="devops-links">
+                            <a href="https://github.com/jazminLU/infra-moon" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="devops-card-visual">
+                        <div class="pipeline">
+                            <div class="pipeline-step">
+                                <i class='bx bxl-github'></i>
+                                <span>PR</span>
+                            </div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step">
+                                <i class='bx bx-check-shield'></i>
+                                <span>CI</span>
+                            </div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step">
+                                <i class='bx bxl-docker'></i>
+                                <span>Build</span>
+                            </div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step active">
+                                <i class='bx bx-rocket'></i>
+                                <span>Deploy</span>
+                            </div>
+                        </div>
+                        <div class="infra-grid">
+                            <div class="infra-box"><i class='bx bx-cloud'></i><span>EKS</span></div>
+                            <div class="infra-box"><i class='bx bx-data'></i><span>RDS</span></div>
+                            <div class="infra-box"><i class='bx bx-cube'></i><span>ECR</span></div>
+                            <div class="infra-box"><i class='bx bx-shield'></i><span>CF</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="devops-cards-row">
+
+                <div class="devops-card">
+                    <div class="devops-card-top">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                    </div>
+                    <h3>portfolio-devops</h3>
+                    <p data-i18n="devops.portfolio.desc">Portfolio website containerized with Docker and served through NGINX. Built as part of a 90-day DevOps challenge — from static site to production-ready container.</p>
+                    <div class="devops-stack">
+                        <span>Docker</span>
+                        <span>NGINX</span>
+                        <span>WSL2</span>
+                    </div>
+                    <div class="devops-links">
+                        <a href="https://github.com/jazminLU/portfolio-devops" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                    </div>
+                </div>
+
+                <div class="devops-card">
+                    <div class="devops-card-top">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                    </div>
+                    <h3>utn-devops</h3>
+                    <p data-i18n="devops.utn.desc">Infrastructure automation with Vagrant and VirtualBox to provision an Ubuntu VM running Apache. Deploys a 3D galaxy web app with automated server configuration.</p>
+                    <div class="devops-stack">
+                        <span>Vagrant</span>
+                        <span>VirtualBox</span>
+                        <span>Apache</span>
+                        <span>Ubuntu</span>
+                    </div>
+                    <div class="devops-links">
+                        <a href="https://github.com/jazminLU/utn-devops" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Projects -->
+    <section class="Project" id="web">
+        <h2 class="heading" data-i18n="projects.heading">Web <span>Projects</span></h2>
+
+        <div class="Project-container">
+
+            <div class="Project-box">
+                <img src="Images/cafeteria2.png" alt="Cafeteria web app" width="300">
+                <div class="Project-layer">
+                    <h4>Cafeteria</h4>
+                    <p>Responsive web app for a local cafeteria. HTML · CSS · JavaScript</p>
+                    <a href="https://cafeteriacordobacapital.netlify.app" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="Project-box">
+                <img src="Images/Ewallet.png" alt="E-wallet app" width="300">
+                <div class="Project-layer">
+                    <h4>E-Wallet MVP</h4>
+                    <p>Banking MVP built with React & TypeScript in an agile training program.</p>
+                    <a href="https://proyecto-ewallet.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="Project-box">
+                <img src="Images/Delivery.png" alt="Delivery app" width="300">
+                <div class="Project-layer">
+                    <h4>App Delivery</h4>
+                    <p>Delivery app frontend with real-time order tracking UI. React · Vite</p>
+                    <a href="https://aplicaciondelivery.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="Project-box">
+                <img src="Images/realstate.png" alt="Real estate website" width="300">
+                <div class="Project-layer">
+                    <h4>Real Estate</h4>
+                    <p>Property listing site with search filters and contact forms. HTML · CSS · JS</p>
+                    <a href="https://web-inmobiliaria.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="Project-box">
+                <img src="Images/clima.jpeg" alt="Weather finder app" width="300">
+                <div class="Project-layer">
+                    <h4>Weather Finder</h4>
+                    <p>Weather search app consuming a public REST API. JavaScript · Fetch API</p>
+                    <a href="https://tempclim2.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="Project-box">
+                <img src="Images/guitar.png" alt="GuitarLa e-commerce" width="300">
+                <div class="Project-layer">
+                    <h4>Web GuitarLa</h4>
+                    <p>E-commerce app for guitars with cart management. React · Vite · Hooks</p>
+                    <a href="https://guitar-la-app.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p data-i18n="footer.text">© Copyright 2026 Jazmin Luna. All rights reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#devops"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js?v=3"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

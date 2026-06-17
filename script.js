@@ -20,7 +20,7 @@ const translations = {
         'about.heading': 'About <span>Me</span>',
         'about.subtitle': 'QA Engineer | DevOps Engineer',
         'about.text': "I'm a QA Engineer with hands-on experience in test automation, CI/CD pipelines and infrastructure monitoring. My background in quality gives me a unique edge in DevOps: I build pipelines that don't just deliver fast, they deliver right. Experienced with Docker, Kubernetes, Prometheus, Grafana and GitHub Actions, I focus on embedding quality at every stage of the delivery process — from code to production. I thrive in agile teams where automation, observability and continuous improvement are part of the culture.",
-        'skills.heading': 'Skills', 'skills.testing': 'Testing Skills', 'skills.devops': 'DevOps Skills',
+        'skills.heading': 'Skills', 'skills.subtitle': 'Technologies and tools I work with', 'skills.testing': 'QA & AUTOMATION', 'skills.devops': 'CLOUD & INFRASTRUCTURE', 'skills.cicd': 'DEVOPS & CI/CD',
         'services.heading': 'My <span>Services</span>',
         'services.cicd.title': 'CI/CD Pipelines',
         'services.cicd.desc': 'Designing and building automated CI/CD pipelines using GitHub Actions and Docker. I integrate automated testing gates, container builds and deployment stages to create fast, reliable and quality-driven delivery workflows. My QA background ensures that quality checks are embedded at every step — not bolted on at the end.',
@@ -35,6 +35,11 @@ const translations = {
         'devops.portfolio.desc': 'Portfolio website containerized with Docker and served through NGINX. Built as part of a 90-day DevOps challenge — from static site to production-ready container.',
         'devops.utn.desc': 'Infrastructure automation with Vagrant and VirtualBox to provision an Ubuntu VM running Apache. Deploys a 3D galaxy web app with automated server configuration.',
         'projects.heading': 'Web <span>Projects</span>',
+        'projects.cta.desc': 'DevOps infrastructure, CI/CD pipelines and web applications — built from scratch.',
+        'projects.cta.btn': 'Explore all projects',
+        'projects.page.heading': 'My <span>Projects</span>',
+        'projects.page.subtitle': 'DevOps infrastructure, CI/CD pipelines and web apps — built from scratch.',
+        'projects.page.back': '← Back to home',
         'contact.heading': 'Contact <span>Me</span>',
         'contact.h3': "Let's work together",
         'contact.desc': "Open to DevOps roles, QA automation projects and collaborations. Drop me a message and I'll get back to you.",
@@ -42,6 +47,7 @@ const translations = {
         'contact.ph.name': 'Full name', 'contact.ph.email': 'Your email',
         'contact.ph.subject': 'Subject', 'contact.ph.message': 'Your message...',
         'contact.send': 'Send Message <i class=\'bx bx-send\'></i>',
+        'modal.title': '✓ Message sent!', 'modal.desc': "Thanks for reaching out. I'll get back to you soon.", 'modal.btn': 'Close',
         'footer.text': '© Copyright 2026 Jazmin Luna. All rights reserved.',
     },
     es: {
@@ -54,7 +60,7 @@ const translations = {
         'about.heading': 'Sobre <span>Mí</span>',
         'about.subtitle': 'QA Engineer | DevOps Engineer',
         'about.text': 'Soy QA Engineer con experiencia práctica en automatización de pruebas, pipelines CI/CD y monitoreo de infraestructura. Mi base en calidad me da una ventaja única en DevOps: construyo pipelines que no solo entregan rápido, sino que entregan bien. Con experiencia en Docker, Kubernetes, Prometheus, Grafana y GitHub Actions, me enfoco en integrar calidad en cada etapa del proceso — del código a producción. Me desarrollo mejor en equipos ágiles donde la automatización, la observabilidad y la mejora continua son parte de la cultura.',
-        'skills.heading': 'Habilidades', 'skills.testing': 'Testing', 'skills.devops': 'DevOps',
+        'skills.heading': 'Habilidades', 'skills.subtitle': 'Tecnologías y herramientas con las que trabajo', 'skills.testing': 'QA & AUTOMATIZACIÓN', 'skills.devops': 'CLOUD & INFRAESTRUCTURA', 'skills.cicd': 'DEVOPS & CI/CD',
         'services.heading': 'Mis <span>Servicios</span>',
         'services.cicd.title': 'Pipelines CI/CD',
         'services.cicd.desc': 'Diseño y construcción de pipelines CI/CD automatizados con GitHub Actions y Docker. Integro gates de testing automáticos, builds de contenedores y etapas de despliegue para crear flujos de entrega rápidos, confiables y orientados a la calidad. Mi background en QA asegura que los controles de calidad estén integrados en cada paso.',
@@ -69,6 +75,11 @@ const translations = {
         'devops.portfolio.desc': 'Portfolio web containerizado con Docker y servido a través de NGINX. Construido como parte de un desafío DevOps de 90 días — de sitio estático a contenedor listo para producción.',
         'devops.utn.desc': 'Automatización de infraestructura con Vagrant y VirtualBox para provisionar una VM Ubuntu con Apache. Despliega una app web 3D con configuración de servidor automatizada.',
         'projects.heading': 'Proyectos <span>Web</span>',
+        'projects.cta.desc': 'Infraestructura DevOps, pipelines CI/CD y aplicaciones web — construidos desde cero.',
+        'projects.cta.btn': 'Explorar todos los proyectos',
+        'projects.page.heading': 'Mis <span>Proyectos</span>',
+        'projects.page.subtitle': 'Infraestructura DevOps, pipelines CI/CD y aplicaciones web — construidos desde cero.',
+        'projects.page.back': '← Volver al inicio',
         'contact.heading': 'Contácta<span>me</span>',
         'contact.h3': 'Trabajemos juntos',
         'contact.desc': 'Abierta a roles DevOps, proyectos de automatización QA y colaboraciones. Enviame un mensaje y te respondo a la brevedad.',
@@ -76,6 +87,7 @@ const translations = {
         'contact.ph.name': 'Nombre completo', 'contact.ph.email': 'Tu email',
         'contact.ph.subject': 'Asunto', 'contact.ph.message': 'Tu mensaje...',
         'contact.send': 'Enviar mensaje <i class=\'bx bx-send\'></i>',
+        'modal.title': '✓ ¡Mensaje enviado!', 'modal.desc': 'Gracias por escribirme. Te respondo a la brevedad.', 'modal.btn': 'Cerrar',
         'footer.text': '© Copyright 2026 Jazmin Luna. Todos los derechos reservados.',
     }
 };
@@ -98,11 +110,13 @@ function applyLanguage(lang) {
         btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
 
-    if (window.typedInstance) window.typedInstance.destroy();
-    window.typedInstance = new Typed('.multiple-text', {
-        strings: t.typedTexts,
-        typeSpeed: 100, backSpeed: 100, backDelay: 1000, loop: true
-    });
+    if (document.querySelector('.multiple-text')) {
+        if (window.typedInstance) window.typedInstance.destroy();
+        window.typedInstance = new Typed('.multiple-text', {
+            strings: t.typedTexts,
+            typeSpeed: 100, backSpeed: 100, backDelay: 1000, loop: true
+        });
+    }
 
     localStorage.setItem('lang', lang);
 }
@@ -121,10 +135,9 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
+            navLinks.forEach(links => links.classList.remove('active'));
+            const activeLink = document.querySelector('header nav a[href*=' + id + ']');
+            if (activeLink) activeLink.classList.add('active');
         }
     });
 
@@ -157,41 +170,64 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 window.typedInstance = null;
 applyLanguage(language);
 
-//Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades(){
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("javascript");
-        habilidades[1].classList.add("cypress");
-        habilidades[2].classList.add("JMeter");
-        habilidades[3].classList.add("appium");
-        habilidades[4].classList.add("sql");
-        habilidades[5].classList.add("postman");
-        habilidades[6].classList.add("Communication");
-        habilidades[7].classList.add("Teamwork");
-        habilidades[8].classList.add("Creativity");
-        habilidades[9].classList.add("dedication");
-        habilidades[10].classList.add("proyect");
-        habilidades[11].classList.add("githubactions");
-    }
+/*==================== emailjs contact form ====================*/
+// ⚠️  Replace these 3 values with yours from emailjs.com
+const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+
+if (typeof emailjs !== 'undefined') {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
 }
 
+const contactFormEl = document.getElementById('contactForm');
+if (contactFormEl) contactFormEl.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn   = document.getElementById('submitBtn');
+    const error = document.getElementById('formError');
+    const lang  = localStorage.getItem('lang') || 'en';
 
-//detecto el scrolling para aplicar la animacion de la barra de habilidades (skills)
-window.onscroll = function(){
-    efectoHabilidades();
-} 
+    error.style.display = 'none';
+    btn.disabled = true;
+    btn.innerHTML = lang === 'es'
+        ? 'Enviando… <i class="bx bx-loader-alt bx-spin"></i>'
+        : 'Sending… <i class="bx bx-loader-alt bx-spin"></i>';
 
+    try {
+        await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this);
+        this.reset();
+        document.getElementById('successModal').classList.add('active');
+    } catch(err) {
+        error.textContent = lang === 'es'
+            ? 'Hubo un error al enviar. Intentá de nuevo.'
+            : 'Something went wrong. Please try again.';
+        error.style.display = 'block';
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = lang === 'es'
+            ? 'Enviar mensaje <i class="bx bx-send"></i>'
+            : 'Send Message <i class="bx bx-send"></i>';
+    }
+});
 
-//document.addEventListener("DOMContentLoaded", function() {
-    const skills = document.querySelectorAll(".skill");
-    skills.forEach((skill, index) => {
-        setTimeout(() => {
-            skill.classList.add("visible");
-        }, index * 300); 
+function closeModal() {
+    const el = document.getElementById('successModal');
+    if (el) el.classList.remove('active');
+}
+
+// close modal clicking outside the card
+const successModalEl = document.getElementById('successModal');
+if (successModalEl) {
+    successModalEl.addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
     });
+}
+
+// close modal with Escape key
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+});
+
 
 
     

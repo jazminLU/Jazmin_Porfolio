@@ -8,6 +8,7 @@
         <title>Jazmin Luna | QA Engineer & DevOps</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
         <link rel="stylesheet"  href="style.css?v=2">
     </head>
   
@@ -26,8 +27,7 @@
                 <a href="#about"    data-i18n="nav.about">About</a>
                 <a href="#skills"   data-i18n="nav.skills">Skills</a>
                 <a href="#services" data-i18n="nav.services">Services</a>
-                <a href="#devops"   data-i18n="nav.devops">DevOps</a>
-                <a href="#Project"  data-i18n="nav.projects">Projects</a>
+                <a href="projects.html" data-i18n="nav.projects">Projects</a>
                 <a href="#contact"  data-i18n="nav.contact">Contact</a>
             </nav>
 
@@ -49,7 +49,6 @@
                  <a href="https://twitter.com/jazminenlaluna1"><i class='bx bxl-twitter' ></i></a>
                  <a href="https://ar.linkedin.com/in/jazmin-luna-ba3467270"><i class='bx bxl-linkedin-square' ></i></a>
                  <a href="https://github.com/jazminlu"><i class='bx bxl-github' ></i></a>
-                 <a href="https://instagram.com/_media_lunita?igshid=OGQ5ZDc2ODk2ZA=="><i class='bx bxl-instagram-alt' ></i></a>
                  <a href="https://wa.me/qr/6XNNERRNFKF6H1"><i class='bx bxl-whatsapp'></i></a>
 
             
@@ -80,116 +79,92 @@
                <!--<a href="#" class="btn">Read More</a>-->
       </div>
     </section>
-     <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2 data-i18n="skills.heading">Skills</h2>
-            <div class="fila">
-         
-                <div class="col">
-                    <h3 data-i18n="skills.testing">Testing Skills</h3>
-                    <div class="skill">
-                        <span>Git</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fab fa-git-alt"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Cypress</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fas fa-vial"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>JMeter</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fas fa-tachometer-alt"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Appium</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fas fa-mobile-alt"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQL</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fas fa-database"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Postman</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fas fa-paper-plane"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <h3 data-i18n="skills.devops">DevOps Skills</h3>
-                    <div class="skill">
-                        <span>Docker</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fab fa-docker"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Linux</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fab fa-linux"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Kubernetes</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fas fa-cogs"></i></span>
+    <section class="skills" id="skills">
+        <h2 class="heading" data-i18n="skills.heading">Skills</h2>
+        <p class="skills-subtitle" data-i18n="skills.subtitle">Technologies and tools I work with</p>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Prometheus</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                               <span><i class="fas fa-fire"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Grafana</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fas fa-chart-line"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>GitHub Actions</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fab fa-github"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="skills-cards-grid">
+
+            <div class="skill-card">
+                <div class="skill-card-label label-testing" data-i18n="skills.testing">QA & AUTOMATION</div>
+                <div class="skill-row"><i class="devicon-cypressio-plain colored"></i><span>Cypress</span></div>
+                <div class="skill-row"><i class="devicon-playwright-plain colored"></i><span>Playwright</span></div>
+                <div class="skill-row"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+                <div class="skill-row"><i class='bx bx-mobile-alt' style="color:#a78bfa"></i><span>Appium</span></div>
+                <div class="skill-row"><i class='bx bx-bar-chart-alt-2' style="color:#f97316"></i><span>JMeter</span></div>
+                <div class="skill-row"><i class='bx bx-code-alt' style="color:#22d3ee"></i><span>SoapUI</span></div>
+                <div class="skill-row"><i class='bx bx-shield-quarter' style="color:#4e9bcd"></i><span>SonarQube</span></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-label label-devops" data-i18n="skills.devops">CLOUD & INFRASTRUCTURE</div>
+                <div class="skill-row"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                <div class="skill-row"><i class="devicon-kubernetes-plain colored"></i><span>Kubernetes</span></div>
+                <div class="skill-row"><i class="devicon-terraform-plain colored"></i><span>Terraform</span></div>
+                <div class="skill-row"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+                <div class="skill-row"><i class="devicon-googlecloud-plain colored"></i><span>GCP</span></div>
+                <div class="skill-row"><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
+                <div class="skill-row"><i class="devicon-prometheus-original colored"></i><span>Prometheus</span></div>
+                <div class="skill-row"><i class="devicon-grafana-original colored"></i><span>Grafana</span></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-label label-cicd" data-i18n="skills.cicd">DEVOPS & CI/CD</div>
+                <div class="skill-row"><i class="devicon-githubactions-plain colored"></i><span>GitHub Actions</span></div>
+                <div class="skill-row"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                <div class="skill-row"><i class='bx bx-git-merge' style="color:#0ef"></i><span>CI/CD Pipelines</span></div>
+                <div class="skill-row"><i class='bx bx-server' style="color:#fb923c"></i><span>Infrastructure as Code</span></div>
+                <div class="skill-row"><i class='bx bx-analyse' style="color:#fbbf24"></i><span>Observability</span></div>
+                <div class="skill-row"><i class='bx bx-bug' style="color:#4ade80"></i><span>Quality Gates</span></div>
+            </div>
+
+        </div>
+
+        <!-- Infinite marquee -->
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <div class="skill-chip"><i class="devicon-cypressio-plain colored"></i><span>Cypress</span></div>
+                <div class="skill-chip"><i class="devicon-playwright-plain colored"></i><span>Playwright</span></div>
+                <div class="skill-chip"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+                <div class="skill-chip"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                <div class="skill-chip"><i class="devicon-kubernetes-plain colored"></i><span>Kubernetes</span></div>
+                <div class="skill-chip"><i class="devicon-terraform-plain colored"></i><span>Terraform</span></div>
+                <div class="skill-chip"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+                <div class="skill-chip"><i class="devicon-googlecloud-plain colored"></i><span>GCP</span></div>
+                <div class="skill-chip"><i class="devicon-githubactions-plain colored"></i><span>GitHub Actions</span></div>
+                <div class="skill-chip"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                <div class="skill-chip"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                <div class="skill-chip"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                <div class="skill-chip"><i class="devicon-grafana-original colored"></i><span>Grafana</span></div>
+                <div class="skill-chip"><i class="devicon-prometheus-original colored"></i><span>Prometheus</span></div>
+                <div class="skill-chip"><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
+                <div class="skill-chip"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                <div class="skill-chip"><i class="devicon-csharp-plain colored"></i><span>C#</span></div>
+                <div class="skill-chip"><i class='bx bx-shield-quarter'></i><span>SonarQube</span></div>
+                <div class="skill-chip"><i class='bx bx-code-alt'></i><span>SoapUI</span></div>
+                <!-- duplicate -->
+                <div class="skill-chip"><i class="devicon-cypressio-plain colored"></i><span>Cypress</span></div>
+                <div class="skill-chip"><i class="devicon-playwright-plain colored"></i><span>Playwright</span></div>
+                <div class="skill-chip"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+                <div class="skill-chip"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                <div class="skill-chip"><i class="devicon-kubernetes-plain colored"></i><span>Kubernetes</span></div>
+                <div class="skill-chip"><i class="devicon-terraform-plain colored"></i><span>Terraform</span></div>
+                <div class="skill-chip"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+                <div class="skill-chip"><i class="devicon-googlecloud-plain colored"></i><span>GCP</span></div>
+                <div class="skill-chip"><i class="devicon-githubactions-plain colored"></i><span>GitHub Actions</span></div>
+                <div class="skill-chip"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                <div class="skill-chip"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                <div class="skill-chip"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                <div class="skill-chip"><i class="devicon-grafana-original colored"></i><span>Grafana</span></div>
+                <div class="skill-chip"><i class="devicon-prometheus-original colored"></i><span>Prometheus</span></div>
+                <div class="skill-chip"><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
+                <div class="skill-chip"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                <div class="skill-chip"><i class="devicon-csharp-plain colored"></i><span>C#</span></div>
+                <div class="skill-chip"><i class='bx bx-shield-quarter'></i><span>SonarQube</span></div>
+                <div class="skill-chip"><i class='bx bx-code-alt'></i><span>SoapUI</span></div>
             </div>
         </div>
+
     </section>
 
     
@@ -219,178 +194,16 @@
           </div>
         </section>
    
-    <section class="devops-projects" id="devops">
-        <h2 class="heading" data-i18n="devops.heading">DevOps <span>Projects</span></h2>
-        <p class="devops-subtitle" data-i18n="devops.subtitle">Infrastructure, pipelines and observability — built from scratch.</p>
-
-        <div class="devops-container">
-
-            <div class="devops-card devops-featured">
-                <div class="devops-card-top">
-                    <div class="terminal-dots">
-                        <span class="dot dot-red"></span>
-                        <span class="dot dot-yellow"></span>
-                        <span class="dot dot-green"></span>
-                    </div>
-                    <span class="devops-badge-featured" data-i18n="devops.featured">★ Flagship</span>
-                </div>
-                <div class="devops-card-body">
-                    <div class="devops-card-left">
-                        <h3>infra-moon</h3>
-                        <p data-i18n="devops.infra.desc">Full cloud infrastructure for a DevTools platform on AWS. Automated deployment with Terraform + Terragrunt, Kubernetes orchestration via EKS, zero-downtime rolling updates, and a complete GitHub Actions CI/CD pipeline — from PR to production.</p>
-                        <div class="devops-stack">
-                            <span>Terraform</span>
-                            <span>Terragrunt</span>
-                            <span>AWS EKS</span>
-                            <span>GitHub Actions</span>
-                            <span>Helm</span>
-                            <span>RDS</span>
-                            <span>ECR</span>
-                            <span>Cloudflare</span>
-                        </div>
-                        <div class="devops-links">
-                            <a href="https://github.com/jazminLU/infra-moon" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
-                        </div>
-                    </div>
-                    <div class="devops-card-visual">
-                        <div class="pipeline">
-                            <div class="pipeline-step">
-                                <i class='bx bxl-github'></i>
-                                <span>PR</span>
-                            </div>
-                            <div class="pipeline-arrow">→</div>
-                            <div class="pipeline-step">
-                                <i class='bx bx-check-shield'></i>
-                                <span>CI</span>
-                            </div>
-                            <div class="pipeline-arrow">→</div>
-                            <div class="pipeline-step">
-                                <i class='bx bxl-docker'></i>
-                                <span>Build</span>
-                            </div>
-                            <div class="pipeline-arrow">→</div>
-                            <div class="pipeline-step active">
-                                <i class='bx bx-rocket'></i>
-                                <span>Deploy</span>
-                            </div>
-                        </div>
-                        <div class="infra-grid">
-                            <div class="infra-box"><i class='bx bx-cloud'></i><span>EKS</span></div>
-                            <div class="infra-box"><i class='bx bx-data'></i><span>RDS</span></div>
-                            <div class="infra-box"><i class='bx bx-cube'></i><span>ECR</span></div>
-                            <div class="infra-box"><i class='bx bx-shield'></i><span>CF</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="devops-cards-row">
-
-                <div class="devops-card">
-                    <div class="devops-card-top">
-                        <div class="terminal-dots">
-                            <span class="dot dot-red"></span>
-                            <span class="dot dot-yellow"></span>
-                            <span class="dot dot-green"></span>
-                        </div>
-                    </div>
-                    <h3>portfolio-devops</h3>
-                    <p data-i18n="devops.portfolio.desc">Portfolio website containerized with Docker and served through NGINX. Built as part of a 90-day DevOps challenge — from static site to production-ready container.</p>
-                    <div class="devops-stack">
-                        <span>Docker</span>
-                        <span>NGINX</span>
-                        <span>WSL2</span>
-                    </div>
-                    <div class="devops-links">
-                        <a href="https://github.com/jazminLU/portfolio-devops" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
-                    </div>
-                </div>
-
-                <div class="devops-card">
-                    <div class="devops-card-top">
-                        <div class="terminal-dots">
-                            <span class="dot dot-red"></span>
-                            <span class="dot dot-yellow"></span>
-                            <span class="dot dot-green"></span>
-                        </div>
-                    </div>
-                    <h3>utn-devops</h3>
-                    <p data-i18n="devops.utn.desc">Infrastructure automation with Vagrant and VirtualBox to provision an Ubuntu VM running Apache. Deploys a 3D galaxy web app with automated server configuration.</p>
-                    <div class="devops-stack">
-                        <span>Vagrant</span>
-                        <span>VirtualBox</span>
-                        <span>Apache</span>
-                        <span>Ubuntu</span>
-                    </div>
-                    <div class="devops-links">
-                        <a href="https://github.com/jazminLU/utn-devops" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
-                    </div>
-                </div>
-
-            </div>
+    <section class="projects-cta" id="projects">
+        <h2 class="heading" data-i18n="nav.projects">Projects</h2>
+        <p class="projects-cta-desc" data-i18n="projects.cta.desc">DevOps infrastructure, CI/CD pipelines and web applications — built from scratch.</p>
+        <div class="projects-cta-chips">
+            <div class="cta-chip"><i class='bx bx-server'></i><span>3 DevOps</span></div>
+            <div class="cta-chip"><i class='bx bx-code-block'></i><span>6 Web Apps</span></div>
+            <div class="cta-chip"><i class='bx bxl-github'></i><span>Open Source</span></div>
         </div>
+        <a href="projects.html" target="_blank" class="btn" data-i18n="projects.cta.btn">Explore all projects</a>
     </section>
-
-    <section class="Project" id="Project">
-    <h2 class="heading" data-i18n="projects.heading">Web <span>Projects</span></h2>
-
-    <div class="Project-container">
-
-        <div class="Project-box">
-            <img src="Images/cafeteria2.png" alt="Cafeteria web app" width="300">
-            <div class="Project-layer">
-            <h4>Cafeteria</h4>
-            <p>Responsive web app for a local cafeteria. HTML · CSS · JavaScript</p>
-            <a href="https://cafeteriacordobacapital.netlify.app"><i class='bx bx-link-external'></i></a>
-        </div>
-      </div>
-
-       <div class="Project-box">
-            <img src="Images/Ewallet.png" alt="E-wallet app" width="300">
-            <div class="Project-layer">
-            <h4>E-Wallet MVP</h4>
-            <p>Banking MVP built with React & TypeScript in an agile training program.</p>
-            <a href="https://proyecto-ewallet.netlify.app/"><i class='bx bx-link-external'></i></a>
-        </div>
-    </div>
-
-    <div class="Project-box">
-            <img src="Images/Delivery.png" alt="Delivery app" width="300">
-            <div class="Project-layer">
-            <h4>App Delivery</h4>
-            <p>Delivery app frontend with real-time order tracking UI. React · Vite</p>
-            <a href="https://aplicaciondelivery.netlify.app/"><i class='bx bx-link-external'></i></a>
-        </div>
-    </div>
-
-    <div class="Project-box">
-            <img src="Images/realstate.png" alt="Real estate website" width="300">
-            <div class="Project-layer">
-            <h4>Real Estate</h4>
-            <p>Property listing site with search filters and contact forms. HTML · CSS · JS</p>
-            <a href="https://web-inmobiliaria.netlify.app/"><i class='bx bx-link-external'></i></a>
-        </div>
-    </div>
-
-    <div class="Project-box">
-        <img src="Images/clima.jpeg" alt="Weather finder app" width="300">
-        <div class="Project-layer">
-        <h4>Weather Finder</h4>
-        <p>Weather search app consuming a public REST API. JavaScript · Fetch API</p>
-        <a href="https://tempclim2.netlify.app/"><i class='bx bx-link-external'></i></a>
-    </div>
-</div>
-
-        <div class="Project-box">
-            <img src="Images/guitar.png" alt="GuitarLa e-commerce" width="300">
-            <div class="Project-layer">
-            <h4>Web GuitarLa</h4>
-            <p>E-commerce app for guitars with cart management. React · Vite · Hooks</p>
-            <a href="https://guitar-la-app.netlify.app/"><i class='bx bx-link-external'></i></a>
-        </div>
-    </div>
-</div>
-</section>
  
 <section class="contact" id="contact">
     <h2 class="heading" data-i18n="contact.heading">Contact <span>Me</span></h2>
@@ -434,19 +247,15 @@
             </div>
         </div>
 
-        <form class="contact-form" action="https://formsubmit.co/jazminluna130596@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New contact from portfolio — Jazmin Luna">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-
+        <form class="contact-form" id="contactForm">
             <div class="input-box">
                 <div class="input-field">
                     <i class='bx bx-user'></i>
-                    <input type="text" name="name" data-i18n-ph="contact.ph.name" placeholder="Full name" required>
+                    <input type="text" name="from_name" data-i18n-ph="contact.ph.name" placeholder="Full name" required>
                 </div>
                 <div class="input-field">
                     <i class='bx bx-envelope'></i>
-                    <input type="email" name="email" data-i18n-ph="contact.ph.email" placeholder="Your email" required>
+                    <input type="email" name="reply_to" data-i18n-ph="contact.ph.email" placeholder="Your email" required>
                 </div>
             </div>
 
@@ -460,11 +269,23 @@
                 <textarea name="message" rows="7" data-i18n-ph="contact.ph.message" placeholder="Your message..." required></textarea>
             </div>
 
-            <button type="submit" class="btn" data-i18n="contact.send">Send Message <i class='bx bx-send'></i></button>
+            <div class="msg-error" id="formError"></div>
+
+            <button type="submit" class="btn" id="submitBtn" data-i18n="contact.send">Send Message <i class='bx bx-send'></i></button>
         </form>
 
     </div>
 </section>
+<!-- Success modal -->
+<div class="modal-overlay" id="successModal">
+    <div class="modal-card">
+        <div class="modal-icon"><i class='bx bx-check-circle'></i></div>
+        <h3 data-i18n="modal.title">Message sent!</h3>
+        <p data-i18n="modal.desc">Thanks for reaching out. I'll get back to you soon.</p>
+        <button class="btn modal-close" onclick="closeModal()" data-i18n="modal.btn">Close</button>
+    </div>
+</div>
+
 <footer class="footer">
     <div class="footer-text">
         <p data-i18n="footer.text">© Copyright 2026 Jazmin Luna. All rights reserved.</p>
@@ -476,7 +297,8 @@
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="script.js?v=2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js?v=3"></script>
   <script src="js/particles.min.js"></script>
   <script src="app.js"></script>
         
