@@ -1359,6 +1359,28 @@
     color: var(--main-color);
 }
 
+.projects-cta .btn {
+    border: 1.5px solid transparent;
+    background:
+        linear-gradient(rgba(8, 12, 28, 0.88), rgba(8, 12, 28, 0.88)) padding-box,
+        linear-gradient(90deg, #0ef, #a78bfa, #38bdf8, #0ef) border-box;
+    background-size: auto, 250% auto;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 1.2rem 3.5rem;
+    font-size: 1.6rem;
+    animation: borderBeam 2.5s linear infinite;
+    box-shadow: 0 0 12px rgba(0, 238, 255, 0.2),
+                0 0 24px rgba(167, 139, 250, 0.1);
+    transition: transform .2s, box-shadow .3s;
+}
+
+.projects-cta .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 22px rgba(0, 238, 255, 0.45),
+                0 0 40px rgba(167, 139, 250, 0.2);
+}
+
 /* ----- projects page hero (projects.html) ----- */
 .projects-page-hero {
     display: flex;
