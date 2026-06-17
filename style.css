@@ -295,9 +295,37 @@
     transition: border-color .3s, box-shadow .3s;
 }
 
-.skill-card:hover {
-    border-color: rgba(0, 238, 255, 0.2);
-    box-shadow: 0 0 2.4rem rgba(0, 238, 255, 0.07);
+.skill-card:has(.label-testing) {
+    border-color: rgba(0, 238, 255, 0.4);
+    box-shadow: 0 0 18px rgba(0, 238, 255, 0.22),
+                0 0 40px rgba(0, 238, 255, 0.07);
+}
+.skill-card:has(.label-testing):hover {
+    border-color: rgba(0, 238, 255, 0.7);
+    box-shadow: 0 0 26px rgba(0, 238, 255, 0.38),
+                0 0 55px rgba(0, 238, 255, 0.13);
+}
+
+.skill-card:has(.label-devops) {
+    border-color: rgba(251, 146, 60, 0.4);
+    box-shadow: 0 0 18px rgba(251, 146, 60, 0.22),
+                0 0 40px rgba(251, 146, 60, 0.07);
+}
+.skill-card:has(.label-devops):hover {
+    border-color: rgba(251, 146, 60, 0.7);
+    box-shadow: 0 0 26px rgba(251, 146, 60, 0.38),
+                0 0 55px rgba(251, 146, 60, 0.13);
+}
+
+.skill-card:has(.label-cicd) {
+    border-color: rgba(167, 139, 250, 0.4);
+    box-shadow: 0 0 18px rgba(167, 139, 250, 0.22),
+                0 0 40px rgba(167, 139, 250, 0.07);
+}
+.skill-card:has(.label-cicd):hover {
+    border-color: rgba(167, 139, 250, 0.7);
+    box-shadow: 0 0 26px rgba(167, 139, 250, 0.38),
+                0 0 55px rgba(167, 139, 250, 0.13);
 }
 
 .skill-card-label {
@@ -1410,7 +1438,7 @@
 }
 
 .terminal-mock {
-    background: rgba(10, 14, 26, 0.42);
+    background: rgba(10, 14, 26, 0.28);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1439,7 +1467,7 @@
 }
 
 .terminal-mock-body {
-    padding: 2.4rem 2.4rem 2.4rem;
+    padding: 2.4rem 2.4rem 6rem;
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
