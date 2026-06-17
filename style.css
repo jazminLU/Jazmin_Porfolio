@@ -1352,7 +1352,7 @@
 /* ----- projects CTA (index.html) ----- */
 .projects-cta {
     text-align: center;
-    padding: 10rem 5%;
+    padding: 8rem 5% 5rem;
 }
 
 .projects-cta-desc {
