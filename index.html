@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Responsive Personal Porfolio Website Design</title>
+        <title>Jazmin Luna | QA Engineer & DevOps</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet"  href="style.css">
@@ -17,39 +17,45 @@
 
         <header class="header">
 
-        <a href="#" class="logo"><i class="" ></i>JL</a>
+        <a href="#" class="logo">JL</a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
             <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#services">Services</a>
-                <a href="#Project">Project</a>
-                <a href="#contact">Contact</a>
-                
-             </nav>
+                <a href="#home"     data-i18n="nav.home">Home</a>
+                <a href="#about"    data-i18n="nav.about">About</a>
+                <a href="#skills"   data-i18n="nav.skills">Skills</a>
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#devops"   data-i18n="nav.devops">DevOps</a>
+                <a href="#Project"  data-i18n="nav.projects">Projects</a>
+                <a href="#contact"  data-i18n="nav.contact">Contact</a>
+            </nav>
+
+        <div class="lang-toggle">
+            <button class="lang-btn active" data-lang="en" onclick="applyLanguage('en')">EN</button>
+            <button class="lang-btn" data-lang="es" onclick="applyLanguage('es')">ES</button>
+        </div>
 
         </header>
 
         <section class="home" id="home"> 
             <div class="home-content">
-                <h3>Hello, It's Me</h3>
+                <h3 data-i18n="home.greeting">Hello, It's Me</h3>
                 <h1>Jazmin Luna</h1>
-                <h3>And I'm a <span class="multiple-text"></span></h3>
-                <p>Providing high quality work to the best user experience.</p>
+                <h3><span data-i18n="home.and">And I'm a</span> <span class="multiple-text"></span></h3>
+                <p data-i18n="home.tagline">Building reliable pipelines and automating quality from code to production.</p>
                  <div class="social-media">
                     
                  <a href="https://twitter.com/jazminenlaluna1"><i class='bx bxl-twitter' ></i></a>
                  <a href="https://ar.linkedin.com/in/jazmin-luna-ba3467270"><i class='bx bxl-linkedin-square' ></i></a>
+                 <a href="https://github.com/jazminlu"><i class='bx bxl-github' ></i></a>
                  <a href="https://instagram.com/_media_lunita?igshid=OGQ5ZDc2ODk2ZA=="><i class='bx bxl-instagram-alt' ></i></a>
-                 <a href="https://wa.me/qr/6XNNERRNFKF6H1"><i class='bx bxl-whatsapp'></i></i></a>
+                 <a href="https://wa.me/qr/6XNNERRNFKF6H1"><i class='bx bxl-whatsapp'></i></a>
 
             
 
             </div>
-            <a href="docs/JazminLuna-QA-Automation.pdf" class="btn">View CV</a>
+            <a href="docs/JazminLuna-QA-Automation.pdf" class="btn" data-i18n="home.cv">View CV</a>
             </div>
 
             <div class="home-img">
@@ -64,22 +70,23 @@
       </div>
 
       <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>QA Automation  & DevOps Trainee</h3>
-        <p>I am a QA automation with experience in manual and automated testing. Currently transitioning into the DevOps world,
-             I combine my passion for quality with continuous learning and practice in modern delivery pipelines.
-             I am driven by the goal of delivering high quality user experiences through agile methodologies, automation and teamwork. 
-             I thrive in collaborative environments where shared goals and continuous improvement are key to success.</p>
+        <h2 class="heading" data-i18n="about.heading">About <span>Me</span></h2>
+        <h3 data-i18n="about.subtitle">QA Engineer | DevOps Engineer</h3>
+        <p data-i18n="about.text">I'm a QA Engineer with hands-on experience in test automation, CI/CD pipelines and infrastructure monitoring.
+             My background in quality gives me a unique edge in DevOps: I build pipelines that don't just deliver fast, they deliver right.
+             Experienced with Docker, Kubernetes, Prometheus, Grafana and GitHub Actions, I focus on embedding quality
+             at every stage of the delivery process — from code to production. I thrive in agile teams where automation,
+             observability and continuous improvement are part of the culture.</p>
                <!--<a href="#" class="btn">Read More</a>-->
       </div>
     </section>
      <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>Skills</h2>
+            <h2 data-i18n="skills.heading">Skills</h2>
             <div class="fila">
          
                 <div class="col">
-                    <h3>Testing Skills</h3>
+                    <h3 data-i18n="skills.testing">Testing Skills</h3>
                     <div class="skill">
                         <span>Git</span>
                         <div class="barra-skill">
@@ -120,9 +127,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="skill">
+                        <span>Postman</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fas fa-paper-plane"></i></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <h3>DevOps Skills</h3>
+                    <h3 data-i18n="skills.devops">DevOps Skills</h3>
                     <div class="skill">
                         <span>Docker</span>
                         <div class="barra-skill">
@@ -164,6 +179,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="skill">
+                        <span>GitHub Actions</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><i class="fab fa-github"></i></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,89 +194,198 @@
 
     
     <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
+        <h2 class="heading" data-i18n="services.heading">My <span>Services</span></h2>
 
         <div class="services-container">
-            
-            <div class="services-box"> 
-                <i class='bx bx-code-alt'></i>
-                <h3>Frontend Developement</h3>
-                <p>I'm a frontend developer passionate about creating visually appealing and functional user interfaces. With experience in HTML, CSS, JavaScript, TypeScript, React, Vite, Node.js and Tailwind, I focus on optimizing the user experience through responsive and user-friendly designs. I developed an MVP for a rural banking application as part of a technology training program, where I worked on building and optimizing key components using React and TypeScript, contributing to the frontend architecture and development workflows in an agile environment. Always keen to integrate the latest trends and best practices, I strive to deliver impactful and high quality solutions, focusing on creating seamless user experiences with modern frontend methodologies. </p> 
-                    <!--<a href="#" class="btn">Read More</a>-->
+
+            <div class="services-box">
+                <i class='bx bx-git-branch'></i>
+                <h3 data-i18n="services.cicd.title">CI/CD Pipelines</h3>
+                <p data-i18n="services.cicd.desc">Designing and building automated CI/CD pipelines using GitHub Actions and Docker. I integrate automated testing gates, container builds and deployment stages to create fast, reliable and quality-driven delivery workflows. My QA background ensures that quality checks are embedded at every step — not bolted on at the end.</p>
             </div>
 
-            <div class="services-box"> 
-                <i class='bx bxs-paint'></i>
-                <h3>Automatic Testing</h3>
-                <p>I have expertise in software automation and QA, including scripting with Cypress, Playwright, Selenium and Appium for automated and mobile testing. I handle API validation with Postman and Insomnia, request simulation with MITM and Proxyman, and database verification using VPN. I also have experience in performance testing with JMeter, functional testing such as regression, end-to-end and integration, and BDD strategies with Cucumber. In addition, I participate in design validations with Figma and elaborate detailed bug handling reports in Jira, using RTM to ensure full coverage.</p> 
-                    <!--<a href="#" class="btn">Read More</a>-->
+            <div class="services-box">
+                <i class='bx bx-shield-quarter'></i>
+                <h3 data-i18n="services.quality.title">Quality Engineering</h3>
+                <p data-i18n="services.quality.desc">End-to-end quality strategy combining automated testing (Cypress, Playwright, Appium) with API validation (Postman) and performance testing (JMeter). I bridge QA and DevOps by embedding automated quality gates directly into pipelines, enabling teams to ship confidently and continuously without sacrificing reliability.</p>
             </div>
 
-                <div class="services-box">
-                    <i class='bx bx-bug'></i>
-                    <h3>Manual Testing</h3>
-                    <p> I have experience in manual software testing, focusing on functional testing, including regression, integration and end-to-end testing. I carefully execute manual test cases to ensure that the product works as expected and meets the specified requirements. My job is to identify and document bugs, provide detailed reports for effective resolution, and verify functionality in different environments. Throughout my career, I have greatly appreciated the importance of testing in software development, which ensures that the final product meets the established requirements. This practice not only improves the quality and reliability of applications, but also contributes to an exceptional user experience, avoiding post-release issues.</p>
-                         <!--<a href="#" class="btn">Read More</a>-->
-                </div>
-              </div>
-            </section>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt-2'></i>
+                <h3 data-i18n="services.monitoring.title">Monitoring & Observability</h3>
+                <p data-i18n="services.monitoring.desc">Setting up monitoring stacks with Prometheus and Grafana to give teams real-time visibility into application health and infrastructure performance. I build dashboards, configure alerts and establish observability practices that help detect issues before they reach users — closing the loop between deployment and reliability.</p>
+            </div>
+
+          </div>
+        </section>
    
+    <section class="devops-projects" id="devops">
+        <h2 class="heading" data-i18n="devops.heading">DevOps <span>Projects</span></h2>
+        <p class="devops-subtitle" data-i18n="devops.subtitle">Infrastructure, pipelines and observability — built from scratch.</p>
+
+        <div class="devops-container">
+
+            <div class="devops-card devops-featured">
+                <div class="devops-card-top">
+                    <div class="terminal-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <span class="devops-badge-featured" data-i18n="devops.featured">★ Flagship</span>
+                </div>
+                <div class="devops-card-body">
+                    <div class="devops-card-left">
+                        <h3>infra-moon</h3>
+                        <p data-i18n="devops.infra.desc">Full cloud infrastructure for a DevTools platform on AWS. Automated deployment with Terraform + Terragrunt, Kubernetes orchestration via EKS, zero-downtime rolling updates, and a complete GitHub Actions CI/CD pipeline — from PR to production.</p>
+                        <div class="devops-stack">
+                            <span>Terraform</span>
+                            <span>Terragrunt</span>
+                            <span>AWS EKS</span>
+                            <span>GitHub Actions</span>
+                            <span>Helm</span>
+                            <span>RDS</span>
+                            <span>ECR</span>
+                            <span>Cloudflare</span>
+                        </div>
+                        <div class="devops-links">
+                            <a href="https://github.com/jazminLU/infra-moon" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="devops-card-visual">
+                        <div class="pipeline">
+                            <div class="pipeline-step">
+                                <i class='bx bxl-github'></i>
+                                <span>PR</span>
+                            </div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step">
+                                <i class='bx bx-check-shield'></i>
+                                <span>CI</span>
+                            </div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step">
+                                <i class='bx bxl-docker'></i>
+                                <span>Build</span>
+                            </div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step active">
+                                <i class='bx bx-rocket'></i>
+                                <span>Deploy</span>
+                            </div>
+                        </div>
+                        <div class="infra-grid">
+                            <div class="infra-box"><i class='bx bx-cloud'></i><span>EKS</span></div>
+                            <div class="infra-box"><i class='bx bx-data'></i><span>RDS</span></div>
+                            <div class="infra-box"><i class='bx bx-cube'></i><span>ECR</span></div>
+                            <div class="infra-box"><i class='bx bx-shield'></i><span>CF</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="devops-cards-row">
+
+                <div class="devops-card">
+                    <div class="devops-card-top">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                    </div>
+                    <h3>portfolio-devops</h3>
+                    <p data-i18n="devops.portfolio.desc">Portfolio website containerized with Docker and served through NGINX. Built as part of a 90-day DevOps challenge — from static site to production-ready container.</p>
+                    <div class="devops-stack">
+                        <span>Docker</span>
+                        <span>NGINX</span>
+                        <span>WSL2</span>
+                    </div>
+                    <div class="devops-links">
+                        <a href="https://github.com/jazminLU/portfolio-devops" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                    </div>
+                </div>
+
+                <div class="devops-card">
+                    <div class="devops-card-top">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                    </div>
+                    <h3>utn-devops</h3>
+                    <p data-i18n="devops.utn.desc">Infrastructure automation with Vagrant and VirtualBox to provision an Ubuntu VM running Apache. Deploys a 3D galaxy web app with automated server configuration.</p>
+                    <div class="devops-stack">
+                        <span>Vagrant</span>
+                        <span>VirtualBox</span>
+                        <span>Apache</span>
+                        <span>Ubuntu</span>
+                    </div>
+                    <div class="devops-links">
+                        <a href="https://github.com/jazminLU/utn-devops" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section class="Project" id="Project">
-    <h2 class="heading">Latest<span>Project</span></h2>
+    <h2 class="heading" data-i18n="projects.heading">Web <span>Projects</span></h2>
 
     <div class="Project-container">
 
         <div class="Project-box">
-            <img src="Images/cafeteria2.png" alt="" width="300">
+            <img src="Images/cafeteria2.png" alt="Cafeteria web app" width="300">
             <div class="Project-layer">
             <h4>Cafeteria</h4>
-            
+            <p>Responsive web app for a local cafeteria. HTML · CSS · JavaScript</p>
             <a href="https://cafeteriacordobacapital.netlify.app"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
 
        <div class="Project-box">
-            <img src="Images/Ewallet.png" alt="" width="300">
+            <img src="Images/Ewallet.png" alt="E-wallet app" width="300">
             <div class="Project-layer">
-            <h4>Wallet</h4>
-           
+            <h4>E-Wallet MVP</h4>
+            <p>Banking MVP built with React & TypeScript in an agile training program.</p>
             <a href="https://proyecto-ewallet.netlify.app/"><i class='bx bx-link-external'></i></a>
         </div>
     </div>
 
     <div class="Project-box">
-            <img src="Images/Delivery.png" alt="" width="300">
+            <img src="Images/Delivery.png" alt="Delivery app" width="300">
             <div class="Project-layer">
             <h4>App Delivery</h4>
-           
+            <p>Delivery app frontend with real-time order tracking UI. React · Vite</p>
             <a href="https://aplicaciondelivery.netlify.app/"><i class='bx bx-link-external'></i></a>
         </div>
     </div>
 
     <div class="Project-box">
-            <img src="Images/realstate.png" alt="" width="300">
+            <img src="Images/realstate.png" alt="Real estate website" width="300">
             <div class="Project-layer">
-            <h4>Real state</h4>
-          
+            <h4>Real Estate</h4>
+            <p>Property listing site with search filters and contact forms. HTML · CSS · JS</p>
             <a href="https://web-inmobiliaria.netlify.app/"><i class='bx bx-link-external'></i></a>
         </div>
     </div>
 
     <div class="Project-box">
-        <img src="Images/clima.jpeg" alt="" width="300">
+        <img src="Images/clima.jpeg" alt="Weather finder app" width="300">
         <div class="Project-layer">
-        <h4>Weather finder</h4>
-        
+        <h4>Weather Finder</h4>
+        <p>Weather search app consuming a public REST API. JavaScript · Fetch API</p>
         <a href="https://tempclim2.netlify.app/"><i class='bx bx-link-external'></i></a>
     </div>
 </div>
 
-     
         <div class="Project-box">
-            <img src="Images/guitar.png" alt="" width="300">
+            <img src="Images/guitar.png" alt="GuitarLa e-commerce" width="300">
             <div class="Project-layer">
             <h4>Web GuitarLa</h4>
-            
+            <p>E-commerce app for guitars with cart management. React · Vite · Hooks</p>
             <a href="https://guitar-la-app.netlify.app/"><i class='bx bx-link-external'></i></a>
         </div>
     </div>
@@ -261,25 +393,81 @@
 </section>
  
 <section class="contact" id="contact">
-<h2 class="heading">Contact<span>Me!</span></h2>
+    <h2 class="heading" data-i18n="contact.heading">Contact <span>Me</span></h2>
 
-<form action="https://formsubmit.co/6d726d06830a95d4e34ed91f05d31af8" method="POST" >
-<div class="input-box">
-    <input type="name" id="name" name="name" placeholder="Full name">
-    <input type="email" placeholder="Email Address">
-  </div>
-  <div class="input-box">
-    <input type="number" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number">
-    <input type="text" placeholder="Email Subject">
-  </div>
-  <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Your Message"></textarea>
-  <input type="submit" value="Send Message" class="btn">
- </form>
- 
+    <div class="contact-wrapper">
+
+        <div class="contact-info">
+            <h3 data-i18n="contact.h3">Let's work together</h3>
+            <p data-i18n="contact.desc">Open to DevOps roles, QA automation projects and collaborations. Drop me a message and I'll get back to you.</p>
+
+            <div class="contact-item">
+                <div class="contact-icon"><i class='bx bx-envelope'></i></div>
+                <div>
+                    <span class="contact-label" data-i18n="contact.label.email">Email</span>
+                    <a href="mailto:jazminluna130596@gmail.com">jazminluna130596@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon"><i class='bx bxl-linkedin-square'></i></div>
+                <div>
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://ar.linkedin.com/in/jazmin-luna-ba3467270" target="_blank">jazmin-luna</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon"><i class='bx bxl-github'></i></div>
+                <div>
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/jazminlu" target="_blank">jazminlu</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon"><i class='bx bxl-whatsapp'></i></div>
+                <div>
+                    <span class="contact-label">WhatsApp</span>
+                    <a href="https://wa.me/qr/6XNNERRNFKF6H1" target="_blank" data-i18n="contact.wa.link">Send message</a>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/jazminluna130596@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New contact from portfolio — Jazmin Luna">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="input-box">
+                <div class="input-field">
+                    <i class='bx bx-user'></i>
+                    <input type="text" name="name" data-i18n-ph="contact.ph.name" placeholder="Full name" required>
+                </div>
+                <div class="input-field">
+                    <i class='bx bx-envelope'></i>
+                    <input type="email" name="email" data-i18n-ph="contact.ph.email" placeholder="Your email" required>
+                </div>
+            </div>
+
+            <div class="input-field full-width">
+                <i class='bx bx-purchase-tag'></i>
+                <input type="text" name="subject" data-i18n-ph="contact.ph.subject" placeholder="Subject">
+            </div>
+
+            <div class="input-field full-width textarea-field">
+                <i class='bx bx-message-detail'></i>
+                <textarea name="message" rows="7" data-i18n-ph="contact.ph.message" placeholder="Your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn" data-i18n="contact.send">Send Message <i class='bx bx-send'></i></button>
+        </form>
+
+    </div>
 </section>
 <footer class="footer">
     <div class="footer-text">
-        <p>© Copyright 2024 Jazmin Luna. All rights reserved.</p>
+        <p data-i18n="footer.text">© Copyright 2026 Jazmin Luna. All rights reserved.</p>
     </div>
         <div class="footer-iconTop">
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>   
