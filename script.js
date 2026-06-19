@@ -173,10 +173,9 @@ window.typedInstance = null;
 applyLanguage(language);
 
 /*==================== emailjs contact form ====================*/
-// ⚠️  Replace these 3 values with yours from emailjs.com
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+const EMAILJS_PUBLIC_KEY  = 'HutWTiDAAFeJFDuVy';
+const EMAILJS_SERVICE_ID  = 'service_f53ofbm';
+const EMAILJS_TEMPLATE_ID = 'template_rh4snms';
 
 if (typeof emailjs !== 'undefined') {
     emailjs.init(EMAILJS_PUBLIC_KEY);
