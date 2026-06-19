@@ -1352,7 +1352,8 @@
 /* ----- projects CTA (index.html) ----- */
 .projects-cta {
     text-align: center;
-    padding: 8rem 5% 2rem;
+    padding: 8rem 5% 4rem;
+    min-height: auto;
 }
 
 .projects-cta-desc {
@@ -1403,27 +1404,34 @@
     gap: 2.4rem;
 }
 
-.cta-dots {
+.cta-ornament {
     display: flex;
     align-items: center;
     gap: 0.8rem;
 }
 
-.cta-dot {
-    width: 0.8rem;
-    height: 0.8rem;
-    border-radius: 50%;
-    background: var(--main-color);
-    box-shadow: 0 0 8px rgba(0, 238, 255, 0.8), 0 0 18px rgba(0, 238, 255, 0.4);
-    animation: dotPulse 1.5s ease-in-out infinite;
+.cta-orn-line {
+    display: block;
+    width: 6rem;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(0, 238, 255, 0.7));
+    box-shadow: 0 0 6px rgba(0, 238, 255, 0.3);
 }
 
-.cta-dot:nth-child(2) { animation-delay: 0.2s; }
-.cta-dot:nth-child(3) { animation-delay: 0.4s; }
+.cta-ornament-right .cta-orn-line {
+    background: linear-gradient(to left, transparent, rgba(0, 238, 255, 0.7));
+}
 
-@keyframes dotPulse {
-    0%, 100% { transform: scale(1);    opacity: 0.4; }
-    50%       { transform: scale(1.5); opacity: 1;   }
+.cta-orn-gem {
+    color: var(--main-color);
+    font-size: 1.1rem;
+    filter: drop-shadow(0 0 6px rgba(0, 238, 255, 0.9));
+    animation: gemPulse 2s ease-in-out infinite;
+}
+
+@keyframes gemPulse {
+    0%, 100% { opacity: 0.5; transform: scale(1);    }
+    50%       { opacity: 1;   transform: scale(1.4);  }
 }
 
 .projects-cta .btn {
